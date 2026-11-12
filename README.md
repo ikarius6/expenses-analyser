@@ -1,5 +1,8 @@
 # Santander Statement Expense Analyzer
 
+<img width="1226" height="661" alt="imagen" src="https://github.com/user-attachments/assets/6df96ea3-f474-4d44-b737-4162928d975e" />
+
+
 A local-first OCR and expense reporting pipeline that extracts monthly **Santander (Mexico)** credit card statements (scanned image PDFs), reconciles every charge and credit to the cent, and generates a **self-contained interactive HTML dashboard**.
 
 > **Designed for AI Agents first:** You don't need to memorize or run CLI commands manually every month. This repository includes a detailed [`AGENTS.md`](AGENTS.md) instruction file so your AI coding assistant (Cursor, Claude Code, Antigravity, Windsurf, GitHub Copilot, OpenCode, etc.) can run the entire extraction, merchant categorization, reconciliation, and HTML build workflow for you from a single prompt.

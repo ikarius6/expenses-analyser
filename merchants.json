@@ -1,0 +1,183 @@
+{
+  "replacements": [
+    ["PAYPALUBRPAGOSMEX", "PAYPAL UBRPAGOSMEX"],
+    ["PAYPAL UBRPAGOSMEX", "PAYPAL UBRPAGOSMEX"],
+    ["PAYPALUBRFLEXMEXI", "PAYPAL UBRFLEXMEXI"],
+    ["UBRFLEXMEXICO", "UBR FLEX MEXICO"],
+    ["DLODELUBEREATS", "DLO DEL UBER EATS"],
+    ["DLOSERVUBEREATS", "DLO SERV UBER EATS"],
+    ["DLOUBEREATS", "DLO UBER EATS"],
+    ["DLO UBEREATS", "DLO UBER EATS"],
+    ["PAYPALFACEBOOK", "PAYPAL FACEBOOK"],
+    ["PAYPAL NAMECOMINC", "PAYPAL NAMECOMINC"],
+    ["PAYPALCOMISIONEST", "PAYPAL COMISIONEST"],
+    ["PAYPAL RIOTGAMESIN", "PAYPAL RIOTGAMESIN"],
+    ["PAYPALRIOTGAMESIN", "PAYPAL RIOTGAMESIN"],
+    ["PAYU GOOGLECLOUD", "PAYU GOOGLE CLOUD"],
+    ["AMAZONAMESES", "AMAZON A MESES"],
+    ["AMAZON AMESES", "AMAZON A MESES"],
+    ["AMAZON A MESES", "AMAZON A MESES"],
+    ["GoogleGOOGLEONE01M", "Google GOOGLE ONE 01M"],
+    ["GoogleOne", "Google One"],
+    ["TOTALPLAYAPPREGCR", "TOTALPLAY APP REG CR"],
+    ["TOTAL PLAY CR", "TOTAL PLAY CR"],
+    ["Name\\.com,Inc", "Name.com, Inc"],
+    ["PAYPAL HOSTINGER", "PAYPAL HOSTINGER"],
+    ["PAYPALHOSTINGER", "PAYPAL HOSTINGER"],
+    ["SEGZURICHSANTANDER1", "SEG ZURICH SANTANDER 1"],
+    ["MERCADOPAGOVERDURA", "MERCADOPAGO VERDURA"],
+    ["MERPAGOVERDURA", "MERPAGO VERDURA"],
+    ["MERPAGOMERCADOLIBRE", "MERPAGO MERCADOLIBRE"],
+    ["PAGOPORTRANSFERENCIA", "PAGO POR TRANSFERENCIA"],
+    ["PAYPALPATREON", "PAYPAL PATREON "],
+    ["ANTHROPICCLAUDESUB", "ANTHROPIC CLAUDE SUB"],
+    ["PORTALCFE", "PORTAL CFE"],
+    ["PASTELERIA", "PASTELERIA "],
+    ["SEARS", "SEARS "],
+    ["NETFLIXCOM1", "NETFLIX COM 1"],
+    ["OPM150323D[I|l]?1", "OPM 150323D11"]
+  ],
+  "credit_keywords_without_plus": [
+    "pagoportransferencia",
+    "santa",
+    "totalplayappregcr"
+  ],
+  "rules": [
+    {
+      "group": "Food delivery (Uber Eats)",
+      "group_key": "food_delivery",
+      "match": ["UBRPAGOSMEX", "UBRFLEXMEX", "UBEREATS"]
+    },
+    {
+      "group": "Uber rides",
+      "group_key": "uber_rides",
+      "match": ["DLOUBER", "DLO UBER"],
+      "exclude": ["EATS"]
+    },
+    {
+      "group": "Amazon",
+      "group_key": "amazon",
+      "match": ["AMAZON"]
+    },
+    {
+      "group": "Refunds / bonificaciones (SANTA)",
+      "group_key": "amazon_refund",
+      "match_first_word": ["SANTA"]
+    },
+    {
+      "group": "Mercado Pago Verdura",
+      "group_key": "groceries",
+      "match": ["MERCADOPAGOVERDURA", "MERCADOPAGO VERDURA", "MERPAGOVERDURA", "MERPAGO VERDURA"]
+    },
+    {
+      "group": "Mercado Libre",
+      "group_key": "mercadolibre",
+      "match": ["MERCADOLIBRE"]
+    },
+    {
+      "group": "PayPal Facebook ads",
+      "group_key": "facebook_ads",
+      "match": ["PAYPAL FACEBOOK", "PAYPALFACEBOOK"]
+    },
+    {
+      "group": "Name.com domains",
+      "group_key": "domains",
+      "match": ["NAME.COM", "NAMECOMINC"]
+    },
+    {
+      "group": "Google Cloud",
+      "group_key": "google_cloud",
+      "match": ["GOOGLE CLOUD", "GOOGLECLOUD"]
+    },
+    {
+      "group": "Google One",
+      "group_key": "google_one",
+      "match": ["GOOGLE ONE", "GOOGLEONE"]
+    },
+    {
+      "group": "Hostinger",
+      "group_key": "hostinger",
+      "match": ["HOSTINGER"]
+    },
+    {
+      "group": "Zurich Santander insurance",
+      "group_key": "insurance",
+      "match": ["ZURICH"]
+    },
+    {
+      "group": "Totalplay internet",
+      "group_key": "internet",
+      "match": ["TOTALPLAY", "TOTAL PLAY"]
+    },
+    {
+      "group": "Netflix",
+      "group_key": "netflix",
+      "match": ["NETFLIX"]
+    },
+    {
+      "group": "Windsurf",
+      "group_key": "devtools",
+      "match": ["WINDSURF"]
+    },
+    {
+      "group": "Anthropic",
+      "group_key": "ai",
+      "match": ["ANTHROPIC"]
+    },
+    {
+      "group": "ElevenLabs",
+      "group_key": "ai",
+      "match": ["ELEVENLABS"]
+    },
+    {
+      "group": "Opencode",
+      "group_key": "other",
+      "match": ["ANOMALY"]
+    },
+    {
+      "group": "Riot Games",
+      "group_key": "gaming",
+      "match": ["RIOTGAMES", "RIOT GAMES"]
+    },
+    {
+      "group": "Patreon",
+      "group_key": "other",
+      "match": ["PATREON"]
+    },
+    {
+      "group": "Pastelería",
+      "group_key": "bakery",
+      "match": ["PASTELERIA"]
+    },
+    {
+      "group": "Sears",
+      "group_key": "department_store",
+      "match": ["SEARS"]
+    },
+    {
+      "group": "AT&T",
+      "group_key": "utilities",
+      "match": ["ATTAPPPS", "AT&T"]
+    },
+    {
+      "group": "Water service",
+      "group_key": "utilities",
+      "match": ["COMISIONEST"]
+    },
+    {
+      "group": "CFE electricity",
+      "group_key": "utilities",
+      "match": ["APP CFE", "PORTALCFE", "PORTAL CFE", "CFE"]
+    },
+    {
+      "group": "Gas service",
+      "group_key": "utilities",
+      "match": ["GAS"]
+    },
+    {
+      "group": "Card payment (transfer)",
+      "group_key": "payment",
+      "match": ["PAGO POR TRANSFERENCIA", "PAGOPORTRANSFERENCIA"]
+    }
+  ]
+}

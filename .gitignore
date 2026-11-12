@@ -1,0 +1,30 @@
+# Virtual environment & Python cache
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Source bank statements & images (sensitive financial data)
+*.pdf
+*.jpg
+*.jpeg
+*.png
+_ocr_preview/
+
+# Extracted OCR & intermediate data files (keep merchants.json tracked)
+*.json
+!merchants.json
+*.md
+!agents.md
+!AGENTS.md
+!README.md
+
+# Generated HTML expense reports
+*.html
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
